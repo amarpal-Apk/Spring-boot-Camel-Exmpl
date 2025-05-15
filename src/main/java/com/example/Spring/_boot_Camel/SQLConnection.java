@@ -33,7 +33,7 @@ public class SQLConnection {
 
         context.start();
         ProducerTemplate producerTemplate = context.createProducerTemplate();
-        producerTemplate.sendBody("direct:start", "SELECT * FROM users");
+        producerTemplate.sendBody("direct:start", "SELECT * FROM Customers");
         Thread.sleep(2000);
         context.stop();
     }
